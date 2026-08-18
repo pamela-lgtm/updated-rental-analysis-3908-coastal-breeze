@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Position — 3908 Coastal Breeze Drive | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#008C82; --teal-dark:#00655E; --teal-pale:#E8F3F2;
+    --gold:#C9A227; --gold-pale:#FBF4DF; --charcoal:#1A1A1A;
+    --ink:#2B2B28; --muted:#6E6E68; --line:#E6E3DC;
+    --paper:#FFFFFF; --bg:#F7F6F3; --red:#A03B2E; --red-pale:#FBF1EF;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Jost',Helvetica,Arial,sans-serif; font-weight:300;
+    font-size:16.5px; line-height:1.68; -webkit-font-smoothing:antialiased;}
+  .sheet{max-width:1080px; margin:0 auto; background:var(--paper); box-shadow:0 1px 3px rgba(26,26,26,.07);}
+  .rule-top{height:5px; background:var(--teal);}
+  .rule-bot{height:5px; background:var(--gold);}
+  .pad{padding:0 56px;}
+  header{padding:38px 56px 0;}
+  .eyebrow{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--teal); font-weight:500; margin:0;}
+  .eyebrow.sub{color:#9A9A94; margin-top:6px; letter-spacing:.14em;}
+  h1{font-family:'Cormorant Garamond',Georgia,serif; font-size:50px; font-weight:500;
+    line-height:1.05; color:var(--charcoal); letter-spacing:-.01em; margin:16px 0 0;}
+  .standfirst{font-size:18px; color:var(--muted); margin:12px 0 0; max-width:66ch;}
+  .divider{height:1px; background:var(--line); margin:28px 0 0;}
+  h2{font-family:'Cormorant Garamond',Georgia,serif; font-size:33px; font-weight:600;
+    line-height:1.2; color:var(--charcoal); margin:46px 0 6px;}
+  h3{font-family:'Jost',sans-serif; font-size:12px; font-weight:600; letter-spacing:.15em;
+    text-transform:uppercase; color:var(--teal); margin:28px 0 10px;}
+  p{margin:0 0 16px;}
+  .lede{font-size:17px; color:var(--muted); margin:0 0 10px; max-width:72ch;}
+
+  /* Recommendation banner */
+  .rec{background:var(--teal); color:#fff; border-radius:6px; padding:26px 30px; margin:24px 0 0;
+       display:flex; align-items:center; gap:30px; flex-wrap:wrap;}
+  .rec .now{flex:0 0 auto;}
+  .rec .k{font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; opacity:.85; font-weight:600;}
+  .rec .v{font-family:'Cormorant Garamond',serif; font-size:44px; line-height:1.05; margin-top:2px;}
+  .rec .arrow{font-size:26px; opacity:.6;}
+  .rec .txt{flex:1 1 260px; font-size:15.5px; line-height:1.55;}
+
+  .facts{display:flex; flex-wrap:wrap; border:1px solid var(--line); border-radius:6px; overflow:hidden; margin:22px 0 0;}
+  .fact{flex:1 1 130px; padding:15px 18px; border-right:1px solid var(--line); background:#FCFCFB;}
+  .fact:last-child{border-right:none;}
+  .fact .k{font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:600;}
+  .fact .v{font-size:19px; color:var(--charcoal); margin-top:3px; font-family:'Cormorant Garamond',serif;}
+
+  table{width:100%; border-collapse:collapse; margin:16px 0 8px; font-size:14.5px;}
+  th{text-align:left; font-weight:600; font-size:10.5px; letter-spacing:.11em;
+    text-transform:uppercase; color:var(--muted); border-bottom:2px solid var(--line);
+    padding:0 9px 9px 0; vertical-align:bottom;}
+  td{padding:10px 9px 10px 0; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.5;}
+  th:last-child, td:last-child{padding-right:0;}
+  .num{text-align:right; font-variant-numeric:tabular-nums;}
+  .addr{font-weight:400; color:var(--charcoal);}
+  .subject-row td{background:var(--teal-pale); font-weight:400; color:var(--teal-dark);}
+  .sec-hd td{background:#F3F1EC; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase;
+    font-weight:600; color:var(--muted); padding:8px 9px 8px 0;}
+  .neg{color:var(--red); font-weight:500;}
+  .small{font-size:13px; color:var(--muted);}
+
+  /* scatter-ish rate bars */
+  .chart{margin:22px 0 8px; border:1px solid var(--line); border-radius:6px; padding:26px 30px 20px; background:#FCFCFB;}
+  .chart-title{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 20px;}
+  .bar-row{display:flex; align-items:center; margin:0 0 13px;}
+  .bar-row:last-child{margin-bottom:0;}
+  .bar-label{flex:0 0 168px; font-size:13.5px; color:var(--charcoal);}
+  .bar-track{flex:1 1 auto; background:#F0EEE9; border-radius:3px; height:28px;}
+  .bar-fill{height:28px; border-radius:3px; background:var(--teal); display:flex; align-items:center; justify-content:flex-end; padding-right:10px;}
+  .bar-fill.sub{background:var(--gold);}
+  .bar-fill.low{background:#9A9A94;}
+  .bar-fill span{color:#fff; font-size:13.5px; font-weight:500;}
+
+  .pull{display:flex; margin:32px 0; align-items:stretch;}
+  .pull .bar{width:3px; background:var(--gold); flex:0 0 3px;}
+  .pull .txt{padding:4px 0 4px 22px; font-family:'Cormorant Garamond',Georgia,serif;
+    font-size:26px; font-style:italic; line-height:1.38; color:var(--teal);}
+
+  .note{background:var(--teal-pale); border-radius:6px; padding:20px 24px; margin:22px 0; font-size:15.5px;}
+  .note strong{color:var(--teal-dark); font-weight:600;}
+  .note.warn{background:var(--red-pale); border-left:4px solid var(--red);}
+  .note.warn strong{color:var(--red);}
+  .note.gold{background:var(--gold-pale); border-left:4px solid var(--gold);}
+  .note.gold strong{color:#8A6E12;}
+
+  ul{margin:0; padding:0; list-style:none;}
+  li{padding:0 0 9px 20px; position:relative; line-height:1.55; font-size:15.5px;}
+  li:last-child{padding-bottom:0;}
+  li:before{content:"—"; position:absolute; left:0; color:var(--gold); font-weight:500;}
+
+  .steps{display:flex; gap:18px; margin:18px 0 0; flex-wrap:wrap;}
+  .step{flex:1 1 240px; border:1px solid var(--line); border-radius:6px; padding:20px 22px; background:#FCFCFB;}
+  .step.a{border-top:4px solid var(--teal);}
+  .step.b{border-top:4px solid var(--gold);}
+  .step .k{font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:600;}
+  .step .v{font-family:'Cormorant Garamond',serif; font-size:32px; color:var(--charcoal); line-height:1.1; margin:4px 0 8px;}
+  .step p{font-size:14.5px; margin:0;}
+
+  a{color:var(--teal);}
+  footer{padding:30px 56px 40px;}
+  .sig{font-family:'Cormorant Garamond',Georgia,serif; font-size:19px; font-style:italic; color:var(--teal); margin:0;}
+  .meta-line{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:#A8A8A2; margin:10px 0 0;}
+  .disclaim{font-size:12.5px; color:var(--muted); line-height:1.6; margin:16px 0 0;}
+
+  @media (max-width:820px){
+    .pad, header, footer{padding-left:20px; padding-right:20px;}
+    h1{font-size:34px;} h2{font-size:26px;} body{font-size:16px;}
+    table{font-size:13px;} .fact{flex:1 1 45%;}
+    .bar-label{flex:0 0 108px; font-size:12px;}
+    .chart{padding:18px 16px;} .rec{padding:20px 20px;}
+  }
+  @media print{
+    body{background:#fff;} .sheet{box-shadow:none; max-width:100%;}
+    h2{page-break-after:avoid;} .note,.chart,table,.rec,.step{page-break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="rule-top"></div>
+
+<header>
+  <p class="eyebrow">Verandah Properties &nbsp;·&nbsp; Market Position Report</p>
+  <p class="eyebrow sub">Prepared for the Owner &nbsp;·&nbsp; August 18, 2026</p>
+  <h1>3908 Coastal Breeze Drive</h1>
+  <p class="standfirst">North Shore Village, Kissimmee — where this property stands against every comparable rental in the Boggy Creek corridor, and what the numbers say to do next.</p>
+
+  <div class="facts">
+    <div class="fact"><div class="k">Beds / Baths</div><div class="v">4 / 3</div></div>
+    <div class="fact"><div class="k">Heated Area</div><div class="v">2,519 sf</div></div>
+    <div class="fact"><div class="k">Built</div><div class="v">2011</div></div>
+    <div class="fact"><div class="k">Garage</div><div class="v">3-car</div></div>
+    <div class="fact"><div class="k">Days on Market</div><div class="v">27</div></div>
+    <div class="fact"><div class="k">Showings</div><div class="v">1</div></div>
+  </div>
+
+  <div class="rec">
+    <div class="now">
+      <div class="k">Current</div>
+      <div class="v">$2,995</div>
+    </div>
+    <div class="arrow">&rarr;</div>
+    <div class="now">
+      <div class="k">Recommended</div>
+      <div class="v">$2,795</div>
+    </div>
+    <div class="txt">Reduce now, and to <strong>$2,695</strong> if no application within 14 days. The reasoning is below, and every figure comes from properties that have actually leased.</div>
+  </div>
+  <div class="divider"></div>
+</header>
+
+<div class="pad">
+
+<h2>Where we are</h2>
+<p>Twenty-seven days on the market. One showing. That prospect liked the property and decided the commute would not work for them. No applications.</p>
+<p>The property is show-ready and you followed every recommendation we made. It is professionally photographed and marketed with a virtual tour, an interactive floor plan, and Realtor co-broke, which most management companies do not offer. Zillow's own data shows single-family rentals with a 3D tour receive roughly 44% more page views and 65% more saves than comparable listings without one, and renters can filter their search to show only listings that have one.</p>
+<p>That matters here for one reason: it removes exposure as an explanation. Three things rent a property — <strong>location, condition, and price.</strong> Location cannot be changed. Condition is done. Price is the only lever left.</p>
+
+<h2>What has actually leased</h2>
+<p class="lede">Every comparable four-bedroom rental in the Boggy Creek corridor, pulled August 18.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th class="num">Heated SF</th>
+      <th class="num">Built</th>
+      <th class="num">Rent</th>
+      <th class="num">$ / SF</th>
+      <th class="num">Days</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="sec-hd"><td colspan="7">Leased</td></tr>
+    <tr><td class="addr">4454 Indigo Sky Ln</td><td class="num">2,270</td><td class="num">2014</td><td class="num">$3,300</td><td class="num">$1.45</td><td class="num">13</td><td>5 bed · leased Apr 28</td></tr>
+    <tr><td class="addr">4475 Biscayne Breeze Way</td><td class="num">2,251</td><td class="num">2013</td><td class="num">$3,000</td><td class="num">$1.33</td><td class="num">108</td><td>Reduced from $3,100</td></tr>
+    <tr><td class="addr">4466 Indigo Sky Ln</td><td class="num">2,270</td><td class="num">2015</td><td class="num">$3,000</td><td class="num">$1.32</td><td class="num">36</td><td>Leased Jun 1</td></tr>
+    <tr><td class="addr">3535 Debois Ct</td><td class="num">2,830</td><td class="num">2019</td><td class="num">$2,900</td><td class="num">$1.02</td><td class="num">30</td><td>Reduced from $3,000</td></tr>
+    <tr><td class="addr">3512 Southern Cross Loop</td><td class="num">2,128</td><td class="num">2018</td><td class="num">$2,800</td><td class="num">$1.32</td><td class="num">22</td><td>Leased May 1</td></tr>
+    <tr><td class="addr">2996 Slough Creek Dr</td><td class="num">2,040</td><td class="num">2022</td><td class="num">$2,495</td><td class="num">$1.22</td><td class="num">123</td><td>Five reductions from $2,750</td></tr>
+
+    <tr class="sec-hd"><td colspan="7">Pending</td></tr>
+    <tr><td class="addr">2775 Red Horse Dr</td><td class="num">2,463</td><td class="num">2018</td><td class="num">$2,500</td><td class="num">$1.02</td><td class="num">20</td><td>Under contract in 20 days</td></tr>
+
+    <tr class="sec-hd"><td colspan="7">Still on the market, unleased</td></tr>
+    <tr><td class="addr">4358 Silver Creek St</td><td class="num">2,370</td><td class="num">2019</td><td class="num">$2,800</td><td class="num">$1.18</td><td class="num">48</td><td class="neg">No offers</td></tr>
+    <tr><td class="addr">2964 Slough Creek Dr</td><td class="num">2,341</td><td class="num">2022</td><td class="num">$2,600</td><td class="num">$1.11</td><td class="num">148</td><td class="neg">Two reductions from $2,750</td></tr>
+
+    <tr class="subject-row"><td class="addr">3908 Coastal Breeze Dr — yours</td><td class="num">2,519</td><td class="num">2011</td><td class="num">$2,995</td><td class="num">$1.19</td><td class="num">27</td><td>Largest in the set</td></tr>
+  </tbody>
+</table>
+<p class="small">Leased comparables averaged $2,916 with a median of $2,950, at a median of 33 days on market.</p>
+
+<h3>A note on how this set was pulled</h3>
+<p>This is a wider search than the June analysis. I extended the geographic radius and deliberately included properties that are <em>not</em> as well equipped as yours — homes with two or two and a half bathrooms instead of three, and two-car garages instead of three.</p>
+<p>That was intentional, and it matters for how you read the table.</p>
+<p>A tenant with a budget is not shopping by bathroom count. They open a search, set a maximum monthly figure, and compare everything that appears. A four-bedroom at $2,800 with two baths and a two-car garage is competing directly with your property whether or not it matches on paper. If it is in their price range and yours is not, they never see yours at all.</p>
+
+<div class="note">
+  <strong>Read the table with that in mind.</strong> Your property has more bathrooms, more garage space, more square footage, a water view, and gated access than most of what is listed above — and it is still priced above almost all of it. The extra features are real, and they are worth something. They are not worth enough to overcome being outside a tenant's search range, because a tenant who filters at $2,800 never reaches the page where those features are listed.
+</div>
+
+<p>Put differently: the wider net makes this analysis harder on your property, not easier. Even measured against homes with fewer baths and smaller garages, the price is not where the activity is.</p>
+
+<h2>Three findings</h2>
+
+<h3>One — there is a ceiling at $3,000</h3>
+<p>Only one property in this corridor leased above $3,000, and it was a five-bedroom that leased back in April. Since then, nothing has cleared $3,000 except a single property that reached exactly $3,000 — and it took 108 days and a price reduction to get there.</p>
+
+<h3>Two — rent is not scaling with square footage</h3>
+<p>Your property is the largest in the comparison set. That would normally be an advantage. In this market right now it is not translating into rent.</p>
+
+<div class="chart">
+  <p class="chart-title">Rent achieved per square foot, by property size</p>
+  <div class="bar-row"><div class="bar-label">2,040 sf — $2,495</div><div class="bar-track"><div class="bar-fill" style="width:84%"><span>$1.22</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">2,128 sf — $2,800</div><div class="bar-track"><div class="bar-fill" style="width:91%"><span>$1.32</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">2,251 sf — $3,000</div><div class="bar-track"><div class="bar-fill" style="width:92%"><span>$1.33</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">2,270 sf — $3,000</div><div class="bar-track"><div class="bar-fill" style="width:91%"><span>$1.32</span></div></div></div>
+  <div class="bar-row"><div class="bar-label"><strong>2,519 sf — yours</strong></div><div class="bar-track"><div class="bar-fill sub" style="width:82%"><span>$1.19 asking</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">2,463 sf — $2,500</div><div class="bar-track"><div class="bar-fill low" style="width:70%"><span>$1.02</span></div></div></div>
+  <div class="bar-row"><div class="bar-label">2,830 sf — $2,900</div><div class="bar-track"><div class="bar-fill low" style="width:70%"><span>$1.02</span></div></div></div>
+</div>
+
+<p>The two largest comparable properties — 2,463 sf and 2,830 sf — both settled at <strong>$1.02 per square foot.</strong> Larger homes in this corridor are not commanding a proportionate premium. Tenants are shopping to a monthly dollar figure, not to square footage.</p>
+
+<h3>Three — everything priced at $2,800 and above is sitting</h3>
+<p>The two properties still unleased are at $2,800 and $2,600. One has been on the market 48 days with no offers; the other has been on 148 days and has already taken two reductions. The property that went under contract fastest in this set — 20 days — is priced at $2,500.</p>
+
+<div class="pull">
+  <div class="bar"></div>
+  <div class="txt">The homes that leased quickly were priced where tenants were already looking. The homes that are sitting were priced where owners hoped they would look.</div>
+</div>
+
+<h2>Why the June recommendation was right, and is not right now</h2>
+<p>The June 10 analysis recommended $3,195. At that point, comparable properties in this corridor were leasing at $3,300 in 13 days and $3,000 in 36 days. That number reflected the market as it actually was.</p>
+<p>The property entered the market on July 23 — six weeks later. The market moved in that window.</p>
+<p>This is the nature of rental data. It can only be read in arrears. A shift becomes visible in the numbers after it has already happened, not before. That is not a shortcoming of the analysis; it is how the measurement works, and it is why pricing has to be revisited against current conditions rather than the conditions that existed when the recommendation was made.</p>
+
+<div class="note gold">
+  <strong>One cause is measurable right here.</strong> Three of the nine properties in this comparison set were listed for sale, failed to sell, and were converted to rentals — including two whose sale listings were cancelled within the last three weeks. Owners in this corridor are pulling homes off the sales market and renting them instead. Every one of those becomes a direct competitor for the same tenant, and none of them appeared in a June comp set because they were not rentals yet.
+</div>
+
+<h2>Our own numbers say the same thing</h2>
+<p class="lede">Independent of the MLS. This is application flow across every property Verandah manages, counted by the date each application arrived.</p>
+
+<table>
+  <thead><tr><th>Period</th><th class="num">Applications received</th><th class="num">Properties drawing applications</th></tr></thead>
+  <tbody>
+    <tr><td class="addr">June 1–18</td><td class="num">24</td><td class="num">11</td></tr>
+    <tr><td class="addr">July 1–18</td><td class="num">23</td><td class="num">7</td></tr>
+    <tr><td class="addr">August 1–18</td><td class="num neg">6</td><td class="num neg">2</td></tr>
+  </tbody>
+</table>
+
+<p>June and July were nearly identical — 24 applications and 23. August is down <strong class="neg">74%</strong> against that baseline over the identical eighteen-day window. As of this report, we have not received an application on any managed property since August 13.</p>
+
+<p>Two things about that are worth stating plainly.</p>
+<ul>
+  <li><strong>It is not your property.</strong> The decline runs across the entire portfolio, across price points and locations. A problem with one listing's photographs or marketing does not produce a portfolio-wide drop.</li>
+  <li><strong>It is not the season.</strong> Our records from last year show August was <em>busier</em> than July, not slower. Whatever is happening now is not the usual late-summer pattern.</li>
+</ul>
+
+<div class="note">
+  <strong>Why this matters more than the comp table.</strong> Leased comparables tell you what the market did weeks or months ago, because a property only appears as leased after the fact. Application volume tells you what tenants are doing this week. It moves first, and it is currently moving down sharply.
+</div>
+
+<h2>The arithmetic</h2>
+<p class="lede">This is the part that decides it.</p>
+
+<table>
+  <thead><tr><th></th><th class="num">Per month</th><th class="num">Over a 12-month lease</th></tr></thead>
+  <tbody>
+    <tr><td class="addr">Reduction from $2,995 to $2,795</td><td class="num">$200</td><td class="num">$2,400</td></tr>
+    <tr><td class="addr">One additional month of vacancy</td><td class="num">$2,995</td><td class="num neg">$2,995 — unrecoverable</td></tr>
+  </tbody>
+</table>
+
+<p><strong>A full year of the reduction costs less than one more month of vacancy.</strong> And unlike rent that is never collected, the reduction buys something: a property that is occupied, maintained, and generating income.</p>
+<p>The cost of waiting compounds. Every week at a price the market has already declined adds days on market, and days on market is itself a signal that prospective tenants read. A listing that has been available for two months invites lower expectations than one that is fresh.</p>
+
+<h2>What the reduction is meant to do</h2>
+<p>This is not simply about leasing faster. It is about creating enough interest that we have a choice.</p>
+<p>One showing gives us no selection at all. A pool of interested applicants lets us screen properly and place the strongest qualified resident — the one with the credit, the income stability, and the rental history that protects this property over the next several years. A well-qualified resident who stays is worth far more than a marginal one who pays slightly more rent and leaves in twelve months.</p>
+<p>Pricing to generate volume is how we earn the right to be selective.</p>
+
+<h2>Recommendation</h2>
+<div class="steps">
+  <div class="step a">
+    <div class="k">Immediately</div>
+    <div class="v">$2,795</div>
+    <p>Places the property just below the $2,800 search threshold, where it offers more square footage, a three-car garage, a water view, and gated access than anything else at that price.</p>
+  </div>
+  <div class="step b">
+    <div class="k">If no application in 14 days</div>
+    <div class="v">$2,695</div>
+    <p>Moves decisively below the two properties currently sitting unleased, and into range of the price point that is producing contracts in this corridor right now.</p>
+  </div>
+</div>
+
+<p style="margin-top:22px;">We have been doing this in Central Florida for more than twenty-five years. This is not a reflection of the marketing or the property. It is the market speaking, and the only responsible answer is to listen to it early rather than late.</p>
+
+<p><a href="https://pamela-lgtm.github.io/Rental-Analysis-3908-Coastal-Breeze-June-2026/">Original June rental analysis</a> &nbsp;·&nbsp; <a href="https://pamela-lgtm.github.io/Where-we-Market-Your-Property/">How we market your property</a></p>
+
+</div>
+
+<footer>
+  <div class="divider" style="margin:0 0 24px;"></div>
+  <p class="sig">The marriage, not the sprint.</p>
+  <p style="font-family:'Jost',sans-serif; font-size:13px; color:var(--muted); line-height:1.7; margin:12px 0 0;">
+    Pamela Syvertson &nbsp;·&nbsp; Owner &amp; Broker &nbsp;·&nbsp; License CQ1048619<br>
+    Verandah Properties, LLC &nbsp;·&nbsp; 407-415-5478
+  </p>
+  <p class="meta-line">Verandah Properties, LLC &nbsp;·&nbsp; Market Position Report</p>
+  <p class="disclaim">
+    This is an opinion of value or Comparative Market Analysis and should not be considered an appraisal. In making any decision that relies upon this work, you should know that the guidelines for development of an appraisal or analysis contained in the Uniform Standards of Professional Appraisal Practice of the Appraisal Foundation have not been followed. Rental comparables sourced from Stellar MLS as of August 18, 2026, and believed reliable but not guaranteed. Zillow engagement figures are from Zillow's published single-family rental listing data. Prepared August 18, 2026.
+  </p>
+</footer>
+
+<div class="rule-bot"></div>
+</div>
+</body>
+</html>
